@@ -1,0 +1,190 @@
+{
+  "schema_version": "user-scenario-preregistration-v1",
+  "registered_at": "2026-10-04T21:14:56.408298+00:00",
+  "model": "gpt-5.4-mini",
+  "provider_response_id": "resp_0060ed3624ad1eda016ac2c1c7bcd887d1bda3c551fc503775",
+  "actions": [
+    {
+      "id": "mention_read",
+      "action": "In Coordination research / First conversation, use @ to read the saved File-check reminder replication draft v2. Ask for a Markdown summary without changing or running anything."
+    },
+    {
+      "id": "save_plan",
+      "action": "Ask the guide to create a new experiment plan from the editable copy: two teams per condition, six rounds, valid probability 0.35, assignment seed 61006. Do not build or run yet."
+    },
+    {
+      "id": "build_world",
+      "action": "Ask the guide to build and review a real shared-file simulator from the new exact plan, without running subjects."
+    },
+    {
+      "id": "run_and_switch",
+      "action": "Ask the guide to run the new experiment with real LLM subjects. Switch to another chat while it works, and keep a separate unsent question there."
+    },
+    {
+      "id": "return_and_results",
+      "action": "Return to First conversation. Ask for the new result in simple Markdown with charts. Check stored effects and uncertainty; do not assume the reminder helped."
+    },
+    {
+      "id": "old_replay",
+      "action": "Ask to replay the earlier experiment-b62705a33765 v1 from another project using @. Scrub backwards and forwards and return. The new plan and old immutable outcome should remain available."
+    },
+    {
+      "id": "reuse_and_branch",
+      "action": "Ask to reuse an exact older plan, then fork this chat to explore another idea. Keep original objects unchanged; branch history and future state must be independent."
+    },
+    {
+      "id": "reload_and_resume",
+      "action": "Reload the branch, switch back to First conversation and inspect its own saved state. Exact citations, the new experiment, original draft and guide operation receipts should remain accessible."
+    }
+  ],
+  "predictions": {
+    "goal": "Test persistent project/chat behavior, guide operation workflow, shared-file simulator creation, running experiments with LLM subjects, cross-chat switching, Markdown rendering, replay/reuse/branch behavior, and reload/resume state integrity in a local Society Lab.",
+    "limitations": [
+      "This is UI/functional testing only, not validation of any scientific theory or treatment effect.",
+      "Do not assume the reminder or draft changes experimental outcomes.",
+      "Predictions are about observable app behavior, not hidden implementation details.",
+      "Keep exact step order and IDs.",
+      "Separate original, branched, reused, and replayed objects conceptually; expect them to remain independently accessible if the product supports it."
+    ],
+    "steps": [
+      {
+        "id": "mention_read",
+        "belief": "The app will likely allow reading the saved replication draft via @ in the First conversation and return a Markdown-formatted summary without modifying state or starting execution.",
+        "probability": 0.86,
+        "checks": [
+          "The draft v2 content is rendered or summarized in Markdown.",
+          "No new run/build status appears.",
+          "No changes are made to the draft contents or timestamps beyond read access, if tracked.",
+          "The conversation remains the same thread/project."
+        ],
+        "failure_signals": [
+          "@ mention fails to resolve the saved draft.",
+          "The UI edits or starts running the draft unexpectedly.",
+          "Markdown is not rendered or summary is plain/unformatted when Markdown is requested.",
+          "The saved draft becomes inaccessible after read."
+        ]
+      },
+      {
+        "id": "save_plan",
+        "belief": "The guide will create a new experiment plan from the editable copy, likely preserving the requested parameters: two teams per condition, six rounds, valid probability 0.35, assignment seed 61006, without building or running yet.",
+        "probability": 0.82,
+        "checks": [
+          "A new plan object appears in saved state.",
+          "The plan reflects two teams per condition, six rounds, probability 0.35, and seed 61006.",
+          "No simulator/build artifacts are created yet.",
+          "The editable copy remains intact as a separate object."
+        ],
+        "failure_signals": [
+          "Plan parameters are changed or partially ignored.",
+          "The system immediately builds or runs instead of only saving the plan.",
+          "The original editable copy is overwritten.",
+          "The plan cannot be created from the editable copy."
+        ]
+      },
+      {
+        "id": "build_world",
+        "belief": "The guide will build a real shared-file simulator from the new exact plan and provide a review/confirmation, while the subjects are not run yet.",
+        "probability": 0.79,
+        "checks": [
+          "A simulator/world artifact is created from the saved plan.",
+          "Review details are shown for the simulator configuration.",
+          "No subject run results are present yet.",
+          "The simulator corresponds to the exact plan parameters."
+        ],
+        "failure_signals": [
+          "Build triggers an experiment run prematurely.",
+          "The created simulator diverges from the requested plan.",
+          "Review output is missing or the build fails.",
+          "The saved plan is modified instead of used as input."
+        ]
+      },
+      {
+        "id": "run_and_switch",
+        "belief": "The app will start running the experiment with real LLM subjects, and switching to another chat should preserve a separate unsent question there while the run continues in the background or queued state.",
+        "probability": 0.77,
+        "checks": [
+          "Run status/progress is visible for the new experiment.",
+          "The user can navigate to another chat without losing the run.",
+          "An unsent draft/question remains in the other chat.",
+          "Returning later should still show the run or its completion state."
+        ],
+        "failure_signals": [
+          "Run cannot start or blocks chat switching.",
+          "Switching chats discards the unsent question.",
+          "The run is canceled or detached when changing conversations.",
+          "Background progress is not preserved."
+        ]
+      },
+      {
+        "id": "return_and_results",
+        "belief": "Returning to First conversation should expose the new result in simple Markdown with charts, plus stored effects and uncertainty, without implying the reminder caused the outcome.",
+        "probability": 0.84,
+        "checks": [
+          "Result is shown in the First conversation.",
+          "Output is in simple Markdown and includes charts/visual summaries if supported.",
+          "Stored effects and uncertainty are explicitly displayed or accessible.",
+          "Language does not attribute causal influence to the reminder."
+        ],
+        "failure_signals": [
+          "Results are missing or not linked to the run.",
+          "Markdown/charts are not rendered as requested.",
+          "Uncertainty/effect storage cannot be inspected.",
+          "The UI or text incorrectly claims the reminder caused the result."
+        ]
+      },
+      {
+        "id": "old_replay",
+        "belief": "The system will be able to replay the earlier experiment-b62705a33765 v1 from another project using @, and after scrub backward/forward plus return, the old immutable outcome and the new plan should both remain available.",
+        "probability": 0.73,
+        "checks": [
+          "The old experiment is accessible via @ from another project.",
+          "Replay controls allow scrubbing backward and forward.",
+          "Returning restores the current context.",
+          "Both old immutable outcome and new plan remain accessible afterward."
+        ],
+        "failure_signals": [
+          "The old experiment cannot be found or replayed.",
+          "Scrubbing changes the underlying immutable result.",
+          "Returning loses the new plan or current context.",
+          "Cross-project access via @ fails."
+        ]
+      },
+      {
+        "id": "reuse_and_branch",
+        "belief": "The app will support reusing an exact older plan and forking the chat into a separate branch so original objects remain unchanged and histories/future state diverge independently.",
+        "probability": 0.75,
+        "checks": [
+          "An exact older plan can be reused without mutation.",
+          "A branch/fork of the chat is created.",
+          "Original objects remain unchanged after branching.",
+          "Branch history and future state differ independently from the source."
+        ],
+        "failure_signals": [
+          "Reuse mutates the source plan.",
+          "Forking is unavailable or collapses into the same history.",
+          "Branch and source share the same future state unexpectedly.",
+          "Older plan contents change after reuse."
+        ]
+      },
+      {
+        "id": "reload_and_resume",
+        "belief": "Reloading the branch and switching back to First conversation should preserve access to saved state, exact citations, the new experiment, the original draft, and guide operation receipts.",
+        "probability": 0.8,
+        "checks": [
+          "Reload returns to the branched conversation state.",
+          "Switching back to First conversation works after reload.",
+          "Exact citations are still available.",
+          "The new experiment, original draft, and guide operation receipts remain accessible."
+        ],
+        "failure_signals": [
+          "Reload loses branch state or citations.",
+          "Switching back to First conversation fails.",
+          "Saved artifacts disappear after reload.",
+          "Guide operation receipts are missing or corrupted."
+        ]
+      }
+    ]
+  },
+  "scope": "Functional product behavior; subjective agent predictions are not observed results.",
+  "registration_hash": "eb4f3f9075ac66a513e8079fb212dd7d8153acab8e63cda28bcaad2f05b5d3b6"
+}

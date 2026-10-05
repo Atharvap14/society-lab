@@ -1,0 +1,68 @@
+{
+  "packet": {
+    "preview_version": "registration-compatibility-preview-v1",
+    "blueprint_ref": {
+      "id": "environment_blueprint-9f2e0f3a795c",
+      "version": 1,
+      "hash": "20f525b3c81a0dfa2df0d44d7c4bbcf70a4c961c02564d5d101c9a14e52b67ff"
+    },
+    "registration_plan": {
+      "trials_per_cell": 2,
+      "seed": 4491,
+      "live": false
+    },
+    "status": "compatible",
+    "checks": {
+      "construction_compiled": true,
+      "fit_approved_analogue": true,
+      "current_source_authorization": true,
+      "design_compatible": true,
+      "exact_world_preserved": true
+    },
+    "reason": null,
+    "design": {
+      "object_kind": "complementary_protocol",
+      "study_kind": "complementary_information_factorial",
+      "research_question": "How do communication opportunities and a private provenance reminder affect exact answers when observations are complementary?",
+      "experimental_unit": "whole_network_run",
+      "primary_outcome": "mean_accuracy",
+      "primary_contrast": "context: source_thought versus placebo (stratified by topology)",
+      "conditions": [
+        "ring / placebo",
+        "ring / source_thought"
+      ],
+      "maximum_units": 4,
+      "maximum_subject_calls": 48,
+      "maximum_hosted_subject_calls": 0,
+      "subject_backend": {
+        "harness": "scripted",
+        "model": "deterministic_offline_policy",
+        "generation": {
+          "policy": "offline_complementary_policy"
+        }
+      },
+      "world_spec_hash": "40fbef60989cb30eb03b9714c705432f0e7eace6b2e47d53433bd27739bbc1ea"
+    },
+    "registered": false,
+    "model_calls": 0,
+    "database_writes": 0,
+    "raw_source_reread": false,
+    "limits": [
+      "Unregistered point-in-time preview; actual registration repeats every gate for its selected exact blueprint and subject mode.",
+      "current_source_authorization means local registry/record membership and current implementation checks only; not user authorization, cloud permissions, remaining budget or upstream freshness.",
+      "fit_approved_analogue is a bound supplied/model review disposition; semantic citation truth, historical fidelity and causal mechanism identification remain unestablished.",
+      "Preparation runs finite factory/boundary probes and constructs prospective protocol declarations; it calls no subjects, archives no runs and reserves no budget.",
+      "Fixed registered contrasts do not automatically operationalize the blueprint mechanism or the local study-guide question."
+    ]
+  },
+  "expected_ref": {
+    "id": "environment_blueprint-9f2e0f3a795c",
+    "version": 1,
+    "hash": "20f525b3c81a0dfa2df0d44d7c4bbcf70a4c961c02564d5d101c9a14e52b67ff"
+  },
+  "expected_plan": {
+    "trials_per_cell": 2,
+    "seed": 4491,
+    "live": false
+  }
+}

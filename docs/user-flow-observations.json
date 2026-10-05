@@ -1,0 +1,70 @@
+{
+  "schema_version": "observed-user-scenario-v1",
+  "observed_at": "2026-10-04T22:03:43.821504+00:00",
+  "registration_hash": "eb4f3f9075ac66a513e8079fb212dd7d8153acab8e63cda28bcaad2f05b5d3b6",
+  "preregistered_model": "gpt-5.4-mini",
+  "scope": "One actual computer-use journey with real guide/subject calls. Final success after repairs is not first-pass success or empirical classifier accuracy.",
+  "observations": [
+    {
+      "id": "mention_read",
+      "outcome": "passed",
+      "evidence": "Actual @ selection and Markdown heading/list; no scientific change."
+    },
+    {
+      "id": "save_plan",
+      "outcome": "passed_after_repair",
+      "evidence": "First source_ref validation failed safely. Bounded correction and exact source binding repaired; new seed61006 plan saved."
+    },
+    {
+      "id": "build_world",
+      "outcome": "passed_after_repair",
+      "evidence": "First natural command only opened plan. Imperative parsing repaired; actual builder/reviewer produced checked world. Read-only world receipt routing repaired separately."
+    },
+    {
+      "id": "run_and_switch",
+      "outcome": "passed_after_repair",
+      "evidence": "First guide incorrectly required an execution result as an input. Prompt repaired; explicit run created51 subject decisions. Changed to another project while execution continued."
+    },
+    {
+      "id": "return_and_results",
+      "outcome": "passed",
+      "evidence": "Returned to original chat; result receipt and embedded report preserved. Findings showed2/2,1/2,2/2 and interval crossing zero. Guide opened requested view but did not fully summarize counts in its first prose response."
+    },
+    {
+      "id": "old_replay",
+      "outcome": "passed_after_repair",
+      "evidence": "Artifact ID was initially not searchable; search extended. Actual older saved experiment replay scrubbed End then Home; messages/tools separate and current plan preserved."
+    },
+    {
+      "id": "reuse_and_branch",
+      "outcome": "passed_after_repair",
+      "evidence": "First guide claimed reuse with navigation only and no receipt. Explicit retry produced actual reuse and fork receipts. Added bounded corrective tool round and refusal to show unsupported mutation claims."
+    },
+    {
+      "id": "reload_and_resume",
+      "outcome": "passed_after_settling",
+      "evidence": "First immediate reload after fork returned origin view. Explicitly selected and confirmed settled branch, then reload retained branch. Original chat/result/copy/citations accessible; separate unsent draft checked by DOM value and server state."
+    }
+  ],
+  "saved_state_checks": {
+    "old_plan_unchanged": true,
+    "old_experiment_unchanged": true,
+    "new_experiment_unchanged": true,
+    "old_plan_reused_exactly": true,
+    "branch_keeps_new_result": true,
+    "other_chat_unsent_idea": true,
+    "save_plan_completed_receipt": true,
+    "build_simulator_completed_receipt": true,
+    "run_experiment_completed_receipt": true,
+    "reuse_artifact_completed_receipt": true,
+    "fork_chat_completed_receipt": true
+  },
+  "saved_state_checks_passed": true,
+  "original_chat_id": "chat-331466208ddb451eb228",
+  "branch_chat_id": "chat-eb8310422c534fbd83d7",
+  "limitations": [
+    "Subjective preregistered probabilities are predictions, not observed probabilities.",
+    "This is one observed route; authored transition fixtures cover other routes separately.",
+    "The source records stay on the laptop; public write-ups include pins and summaries, not raw corpus."
+  ]
+}

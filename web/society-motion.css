@@ -1,0 +1,12 @@
+/* Motion guidance: supermemoryai/skills/svg-animations. Event data drives replay. */
+.sr-avatar>g{transform-box:fill-box;transform-origin:center;transition:opacity 180ms ease-out}
+.sr-avatar-current>g{animation:sl-speaker 350ms ease-out 1}
+.sr-reference-edge path{stroke-dasharray:6 5;animation:sl-message-path 600ms ease-out 1}
+.sr-message-current{animation:sl-current-message 180ms ease-out 1}
+.ws-guide-pending:before{content:'';display:inline-block;width:12px;height:12px;border:2px solid #c9d7cc;border-top-color:#2b827a;border-radius:50%;margin-right:8px;animation:sl-working 800ms linear infinite}
+.ws-chat-link,.ws-mini-artifacts button,.ws-prompt-ideas button{transition:background-color 150ms ease-out,border-color 150ms ease-out}
+@keyframes sl-speaker{0%{opacity:.65}100%{opacity:1}}
+@keyframes sl-message-path{from{stroke-dashoffset:44;opacity:.4}to{stroke-dashoffset:0;opacity:1}}
+@keyframes sl-current-message{from{opacity:.6;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
+@keyframes sl-working{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.sr-root *,.ws-guide-pending:before{animation:none!important;transition:none!important}}

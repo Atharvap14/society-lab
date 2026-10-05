@@ -1,0 +1,289 @@
+{
+  "packet": {
+    "packet_version": "measurement-review-packet-v1",
+    "sample_ref": {
+      "id": "measurement_sample-5e27864ba9ea",
+      "version": 1,
+      "hash": "8791b4838e1518ca0d6208315fe93399c7702ec47bcbde5bb9ba38d70499b774"
+    },
+    "review_ref": {
+      "id": "measurement_review-5e27864ba9ea",
+      "version": 2,
+      "hash": "5e6feffcc8232ad2dc05f08f8cb53f1c7d439ba969ca9567c4a48a063e7c403f"
+    },
+    "dataset_ref": {
+      "id": "dataset-e86176342281",
+      "version": 1,
+      "hash": "7278c6a0ede3c6dfaafc58bcb8cdab6bcc1e02ad5e5292eaa605de02038d66a7"
+    },
+    "construct": {
+      "question": "Does this message explicitly report a dependency blocker?",
+      "positive_definition": "The speaker states an inability to proceed on an explicit dependency.",
+      "negative_definition": "An unrelated plan without a stated blocker.",
+      "exclusions": []
+    },
+    "design": {
+      "population_size": 2,
+      "sample_size": 2,
+      "seed": 42,
+      "sampling": "python_random_sample_canonical_ids_without_replacement_v1",
+      "python_version": "3.12.2",
+      "population_ids_sha256": "e99734fb98cb5725ae2d39ef1554b34d725c6710ac8c74752c12a48af18461fe",
+      "draw_order": [
+        "m0",
+        "m1"
+      ],
+      "inclusion_probability": 1.0,
+      "population_speaker_type_counts": {
+        "agent": 2
+      },
+      "context_neighbors": 1,
+      "population_scope": "All retained messages in this exact dataset, including declared speaker categories; not the complete export."
+    },
+    "instrument": {
+      "detector_id": "blocker_report",
+      "definition": {
+        "description": "Speaker explicitly reports inability to proceed or waiting on a dependency.",
+        "non_examples": "Ordinary future work without a stated obstruction."
+      },
+      "detector_version": "observable-signals-v1",
+      "discovery_sha256": "dacb7b092a7356f467c24f8b7be125420f91f9a12938275cbb72951b30f51878",
+      "question": "Does this message explicitly report a dependency blocker?",
+      "definition_scope": "Regex definition is separate from the authored operational construct; equivalence is not established.",
+      "current_code_matches": true,
+      "loaded_code_matches": true,
+      "predictions_scope": "frozen_historical_regex",
+      "cheap_operator_check_performed": true,
+      "saved_predictions_match_current_operator": true,
+      "prediction_attestation": "matches_current_pinned_regex",
+      "historical_execution_attested": false
+    },
+    "items": [
+      {
+        "message_id": "m0",
+        "source_record": {
+          "id": "m0",
+          "timestamp": "2025-04-18T18:00:00.000000Z",
+          "room_id": "room1",
+          "agent_name": "Fixture agent",
+          "speaker_type": "agent",
+          "source": {
+            "file": "fixture.jsonl",
+            "line": 1,
+            "table": "chat_messages"
+          },
+          "source_sha256": "954ec451e0cd54897cbd67451bcc10144372dc8e49e282e345b67789128790e4",
+          "source_record_sha256": "fea6b1afb7fc0713a01bc485debf3cbd71dae98731bf41ae495d8a559ad99a4c",
+          "declared_message_content_hash": "bd9780f355b7e847653f75e49b087f9fd8f9f7a197d6c571ce5f54fc2963fbcd",
+          "full_content_utf8_sha256": "d08aa99814a131a283e2374d302f1f17065052d853884cf0b6efc10f7baecee7",
+          "content": "I am waiting for the export.",
+          "content_characters": 28,
+          "content_truncated": false
+        },
+        "context": {
+          "before": [],
+          "after": [
+            {
+              "id": "m1",
+              "timestamp": "2025-04-18T18:01:00.000000Z",
+              "room_id": "room1",
+              "agent_name": "Fixture agent",
+              "speaker_type": "agent",
+              "source": {
+                "file": "fixture.jsonl",
+                "line": 2,
+                "table": "chat_messages"
+              },
+              "source_sha256": "2ce4a864871fabf9c0805423235bcba2ab95a84405b6d7fcd70c7922d47f8660",
+              "source_record_sha256": "d0ebda74f03e8c3533f20a2dbea19027a149b47425a0aea18260ba8bf0cb7438",
+              "declared_message_content_hash": "6f8228457ba8bff08b88dffc03dc75ae62453b9dcd1ddb0a8f9dfafe920c2f91",
+              "full_content_utf8_sha256": "5be096f2b9a8e7c16d5d6720fb158d5ee8c4195b1fe256e8f1c9f9152a2fa267",
+              "content": "I can work on something else.",
+              "content_characters": 29,
+              "content_truncated": false
+            }
+          ]
+        },
+        "prediction": null,
+        "current_judgment": {
+          "sequence": 1,
+          "message_id": "m0",
+          "label": "yes",
+          "reason": "Explicitly waiting for the export.",
+          "reviewer_id": "fixture-reviewer",
+          "reviewer_mode": "synthetic_fixture",
+          "recorded_at": "2026-10-04T06:19:53.019238+00:00",
+          "predictions_visible": false
+        },
+        "prior_judgments": []
+      },
+      {
+        "message_id": "m1",
+        "source_record": {
+          "id": "m1",
+          "timestamp": "2025-04-18T18:01:00.000000Z",
+          "room_id": "room1",
+          "agent_name": "Fixture agent",
+          "speaker_type": "agent",
+          "source": {
+            "file": "fixture.jsonl",
+            "line": 2,
+            "table": "chat_messages"
+          },
+          "source_sha256": "2ce4a864871fabf9c0805423235bcba2ab95a84405b6d7fcd70c7922d47f8660",
+          "source_record_sha256": "d0ebda74f03e8c3533f20a2dbea19027a149b47425a0aea18260ba8bf0cb7438",
+          "declared_message_content_hash": "6f8228457ba8bff08b88dffc03dc75ae62453b9dcd1ddb0a8f9dfafe920c2f91",
+          "full_content_utf8_sha256": "5be096f2b9a8e7c16d5d6720fb158d5ee8c4195b1fe256e8f1c9f9152a2fa267",
+          "content": "I can work on something else.",
+          "content_characters": 29,
+          "content_truncated": false
+        },
+        "context": {
+          "before": [
+            {
+              "id": "m0",
+              "timestamp": "2025-04-18T18:00:00.000000Z",
+              "room_id": "room1",
+              "agent_name": "Fixture agent",
+              "speaker_type": "agent",
+              "source": {
+                "file": "fixture.jsonl",
+                "line": 1,
+                "table": "chat_messages"
+              },
+              "source_sha256": "954ec451e0cd54897cbd67451bcc10144372dc8e49e282e345b67789128790e4",
+              "source_record_sha256": "fea6b1afb7fc0713a01bc485debf3cbd71dae98731bf41ae495d8a559ad99a4c",
+              "declared_message_content_hash": "bd9780f355b7e847653f75e49b087f9fd8f9f7a197d6c571ce5f54fc2963fbcd",
+              "full_content_utf8_sha256": "d08aa99814a131a283e2374d302f1f17065052d853884cf0b6efc10f7baecee7",
+              "content": "I am waiting for the export.",
+              "content_characters": 28,
+              "content_truncated": false
+            }
+          ],
+          "after": []
+        },
+        "prediction": null,
+        "current_judgment": null,
+        "prior_judgments": []
+      }
+    ],
+    "predictions_included": false,
+    "blinding_authenticated": false,
+    "labels": [
+      "yes",
+      "no",
+      "uncertain"
+    ],
+    "reviewer_modes": [
+      "manual_operator",
+      "agent_assisted",
+      "synthetic_fixture"
+    ],
+    "model_calls": 0,
+    "calibration_established": false,
+    "latest_label_policy": "Latest accepted declaration per sampled message; not consensus or authenticated human truth.",
+    "scope": "Sample-level comparisons against latest accepted declared labels only; not consensus, authenticated human truth, representative independent adjudication, calibration, population accuracy, prevalence, novelty, or causal evidence. No model calls or behavior/library status changes. Retained registry sources are checked; raw source bytes are not reread. A current pinned regex may be recomputed cheaply to check saved prediction consistency; this does not attest historical execution or semantic correctness."
+  },
+  "report": {
+    "report_version": "measurement-review-report-v1",
+    "sample_ref": {
+      "id": "measurement_sample-5e27864ba9ea",
+      "version": 1,
+      "hash": "8791b4838e1518ca0d6208315fe93399c7702ec47bcbde5bb9ba38d70499b774"
+    },
+    "review_ref": {
+      "id": "measurement_review-5e27864ba9ea",
+      "version": 2,
+      "hash": "5e6feffcc8232ad2dc05f08f8cb53f1c7d439ba969ca9567c4a48a063e7c403f"
+    },
+    "dataset_ref": {
+      "id": "dataset-e86176342281",
+      "version": 1,
+      "hash": "7278c6a0ede3c6dfaafc58bcb8cdab6bcc1e02ad5e5292eaa605de02038d66a7"
+    },
+    "totals": {
+      "sample_size": 2,
+      "known_labels": 1,
+      "uncertain_labels": 0,
+      "missing_labels": 1,
+      "available_predictions": 2,
+      "unavailable_predictions": 0,
+      "compared_messages": 1
+    },
+    "current_label_counts": {
+      "yes": 1,
+      "no": 0,
+      "uncertain": 0,
+      "missing": 1
+    },
+    "current_labels_by_mode": {
+      "manual_operator": {
+        "yes": 0,
+        "no": 0,
+        "uncertain": 0
+      },
+      "agent_assisted": {
+        "yes": 0,
+        "no": 0,
+        "uncertain": 0
+      },
+      "synthetic_fixture": {
+        "yes": 1,
+        "no": 0,
+        "uncertain": 0
+      }
+    },
+    "conflicting_declarations": [],
+    "metrics": {
+      "available": true,
+      "reason": null,
+      "confusion": {
+        "true_positive": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "true_negative": 0
+      },
+      "agreement": {
+        "numerator": 1,
+        "denominator": 1,
+        "fraction": 1.0
+      },
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "instrument": {
+      "detector_id": "blocker_report",
+      "definition": {
+        "description": "Speaker explicitly reports inability to proceed or waiting on a dependency.",
+        "non_examples": "Ordinary future work without a stated obstruction."
+      },
+      "detector_version": "observable-signals-v1",
+      "discovery_sha256": "dacb7b092a7356f467c24f8b7be125420f91f9a12938275cbb72951b30f51878",
+      "question": "Does this message explicitly report a dependency blocker?",
+      "definition_scope": "Regex definition is separate from the authored operational construct; equivalence is not established.",
+      "current_code_matches": true,
+      "loaded_code_matches": true,
+      "predictions_scope": "frozen_historical_regex",
+      "cheap_operator_check_performed": true,
+      "saved_predictions_match_current_operator": true,
+      "prediction_attestation": "matches_current_pinned_regex",
+      "historical_execution_attested": false
+    },
+    "model_calls": 0,
+    "calibration_established": false,
+    "prediction_visibility": {
+      "current_declarations": {
+        "visible": 0,
+        "hidden": 1
+      },
+      "all_declarations": {
+        "visible": 0,
+        "hidden": 1
+      },
+      "scope": "Reviewer-declared UI exposure only; not authenticated blinding or evidence of independence."
+    },
+    "reviewer_provenance": "Reviewer identity and mode are declared, not independently authenticated.",
+    "latest_label_policy": "Latest accepted declaration per sampled message; not consensus or authenticated human truth.",
+    "scope": "Sample-level comparisons against latest accepted declared labels only; not consensus, authenticated human truth, representative independent adjudication, calibration, population accuracy, prevalence, novelty, or causal evidence. No model calls or behavior/library status changes. Retained registry sources are checked; raw source bytes are not reread. A current pinned regex may be recomputed cheaply to check saved prediction consistency; this does not attest historical execution or semantic correctness."
+  }
+}

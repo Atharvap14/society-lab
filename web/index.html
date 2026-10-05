@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f5f0">
+  <meta name="description" content="A local research workbench for observing agent societies and testing communication mechanisms with frozen swarm and network experiments.">
+  <title>Society Lab · Agent society research</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/experience.css">
+  <link rel="stylesheet" href="/society-replay.css">
+  <link rel="stylesheet" href="/artifact-map.css">
+  <link rel="stylesheet" href="/lab-workspace.css?v=village-demo-3">
+  <link rel="stylesheet" href="/workspace-mentions.css">
+  <link rel="stylesheet" href="/guide-message.css?v=village-demo-3">
+  <link rel="stylesheet" href="/society-motion.css">
+  <style>
+    .gm-ref{appearance:none;display:inline-flex;align-items:center;gap:7px;max-width:100%;margin:4px 5px 4px 0;padding:8px 11px;border:1px solid #d4ded7;border-radius:9px;background:#fffefb;color:#355c4c;font-family:inherit;font-size:12px;font-weight:500;line-height:1.45;text-align:left;white-space:normal;cursor:pointer;box-shadow:0 1px 2px #27473b08}
+    .gm-ref:hover{background:#edf4ed;border-color:#a7bfac}.gm-ref:focus-visible{outline:3px solid #739c83;outline-offset:2px}
+    .gm-ref small{flex-shrink:0;padding:1px 5px;border-radius:5px;background:#edf2ec;color:#6b7d6f;font-size:10px}
+    .gm-sources{display:flex;flex-wrap:wrap;gap:5px;margin:12px 0}.gm-event{padding:11px 0;border-top:1px solid #e1e8df}
+    .gm-event strong{display:block;margin:5px 0;font-size:12px;color:#385d4e}.gm-event p{margin:6px 0 9px;font-size:12px;line-height:1.65;color:#68756b}
+    .gm-status{display:inline-block;padding:3px 7px;border-radius:6px;background:#e9f1e8;color:#46654f;font-size:10px;font-weight:600}.gm-status[data-gm-status=failed]{background:#f4e7e3;color:#97684e}
+    #guide-activity .gm-activity{padding:12px;border:1px solid #e0e7df;border-radius:11px;background:#f8fbf5}#guide-activity .gm-scope{font-size:11px;color:#798578;line-height:1.5}
+  </style>
+  <script src="/revision-relay.js" defer></script>
+  <script src="/episode-workspace.js" defer></script>
+  <script src="/study-guide.js" defer></script>
+  <script src="/spectral-signal-view.js" defer></script>
+  <script src="/measurement-review.js" defer></script>
+  <script src="/measurement-review-host.js" defer></script>
+  <script src="/blueprint-registration-preview.js" defer></script>
+  <script src="/society-replay.js" defer></script>
+  <script src="/research-journey.js" defer></script>
+  <script src="/society-experience.js" defer></script>
+  <script src="/artifact-map.js" defer></script>
+  <script src="/workspace-mentions.js" defer></script>
+  <script src="/guide-message.js" defer></script>
+  <script src="/lab-workspace.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body data-agent-first="true">
+  <a class="skip" href="#main">Skip to research workspace</a>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Society Lab home">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 35 12v16L20 37 5 28V12Z"/><path d="M20 3v34M5 12l30 16M35 12 5 28"/><circle cx="20" cy="20" r="4"/></svg>
+        <span>Society<span class="brand-light">Lab</span><small>UNDERSTAND YOUR AGENTS</small></span>
+      </a>
+      <div class="top-meta"><span id="workspace-location">Your workspace / Start here</span><span class="connection" id="connection"><i></i> Connecting</span></div>
+    </header>
+    <div class="workspace">
+      <aside class="sidebar">
+        <div id="workspace-projects" aria-label="Projects and conversations"></div>
+        <p class="nav-label">YOUR RESEARCH</p>
+        <nav aria-label="Workspace views" id="navigation">
+          <button class="nav-button active" data-view="workspace"><span class="nav-icon">◌</span>Current chat</button>
+          <button class="nav-button" data-view="artifacts"><span class="nav-icon">▧</span>Saved work</button>
+          <button class="nav-button" data-view="library"><span class="nav-icon">◈</span>Behaviour library</button>
+          <button class="nav-button" data-view="experiments"><span class="nav-icon">◷</span>Saved experiments</button>
+          <button class="nav-button" data-view="projects"><span class="nav-icon">⌂</span>Projects and chats</button>
+          <details class="ws-inspect-tools"><summary>Inspect research views</summary>
+            <p>The guide runs these tools. You can inspect their saved work here.</p>
+            <button class="nav-button" data-view="connect">Connected sources</button>
+            <button class="nav-button" data-view="brief">Discoveries</button>
+            <button class="nav-button" data-view="plan">Current plan</button>
+            <button class="nav-button" data-view="simulator">Environment and run</button>
+            <button class="nav-button" data-view="findings">Results</button>
+            <button class="nav-button" data-view="watch">Replay</button>
+            <details id="advanced-navigation" class="advanced-navigation"><summary>Evidence details</summary>
+              <button class="nav-button" data-view="observatory">Network details</button>
+              <button class="nav-button" data-view="episode">Episode details</button>
+              <button class="nav-button" data-view="measurement">Check labels</button>
+              <button class="nav-button" data-view="library">Saved explanations</button>
+              <button class="nav-button" data-view="audit">Activity log</button>
+            </details>
+          </details>
+        </nav>
+        <div class="sidebar-note"><div class="tiny-line"></div><p>Start with a chat.<br>Leave with a question<br>you can test.</p></div>
+        <details class="execution-settings"><summary>Research settings</summary><div class="run-mode">
+          <label class="switch-row" for="live-mode"><span>Real LLM agents</span><input id="live-mode" type="checkbox" checked disabled><span class="switch" aria-hidden="true"></span></label>
+          <p id="mode-description">Research and subject agents use the configured live harness.</p>
+          <label class="small-label" for="harness">Research harness</label>
+          <select id="harness"><option value="responses">OpenAI Responses</option><option value="codex">Codex CLI</option></select>
+          <p class="mode-footnote">Live experimental subjects use Responses.</p>
+          <div class="budget" id="budget">API calls <strong>—</strong></div>
+        </div></details>
+        <div class="sidebar-footer"><span class="status-dot"></span> Stored on this laptop</div>
+      </aside>
+      <main id="main" tabindex="-1"><div class="initial-loading"><span class="spinner"></span>Opening the research workspace…</div></main>
+      <aside id="guide-dock" class="guide-dock" aria-label="Society guide"><div class="guide-head"><div class="guide-face" aria-hidden="true">✦</div><div><h2>Your Society guide</h2><p id="guide-budget">AI guide · local workspace</p></div><button id="guide-close" aria-label="Minimize guide">−</button></div><div id="guide-activity" aria-label="Guide activity"></div><div id="guide-messages" class="guide-messages" role="log" aria-label="Guide conversation" aria-live="polite"></div><div class="guide-prompts"><button data-guide-prompt="Explain what I am looking at in simple terms.">What am I looking at?</button><button data-guide-prompt="Open the saved AI test findings and explain what helped, and what is still unknown.">Show me what helped</button></div><form id="guide-form"><label class="sr-only" for="guide-input">Ask the Society guide</label><textarea id="guide-input" rows="2" maxlength="1600" placeholder="Ask me. I can open it for you…" required></textarea><button type="submit" aria-label="Send to guide">↑</button></form><div class="guide-shortcuts"><span>Saved views · read only</span><div><button data-guide-shortcut="watch">Watch</button><button data-guide-shortcut="plan">Plan</button><button data-guide-shortcut="findings">Findings</button><button data-guide-shortcut="artifacts">Saved work</button></div></div></aside>
+    </div>
+    <footer class="page-footer">Society Lab <span>Your questions. Your projects. Your research.</span><span>Real agents. Recorded actions. Revisable explanations.</span></footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <button id="guide-toggle" class="guide-toggle" aria-controls="guide-dock" aria-expanded="false">✦ Ask the guide</button>
+  <dialog id="evidence-dialog"><div class="dialog-heading"><div><span class="eyebrow">SOURCE EVIDENCE</span><h2>Message inspection</h2></div><button class="icon-button" id="close-dialog" aria-label="Close message inspection">×</button></div><div id="dialog-body"></div></dialog>
+</body>
+</html>

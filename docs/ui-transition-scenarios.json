@@ -1,0 +1,37 @@
+{
+  "plan_version": "ui-transition-scenarios-v1",
+  "classification": "Prospectively declared software fixture checks, not an agent experiment or evidence about AI Village.",
+  "seeds": [9041, 61006, 7727],
+  "moves_per_seed": 60,
+  "generator": "Unsigned xorshift32, shuffle the declared twelve actions independently in each twelve-move block using Fisher-Yates; five blocks per seed. Values derive from seed and move ordinal, never from observed outcomes.",
+  "actions": ["edit_question", "edit_control", "edit_numeric", "switch_chat", "source_replay", "result_replay", "saved_stage", "copy_fields", "restore_exact", "stale_guide", "overlap_save", "connect_source"],
+  "action_contracts": {
+    "edit_question": "Edit the current local question; only this chat's draft changes and any previously selected current plan becomes an old saved version.",
+    "edit_control": "Edit this chat's control note independently of its question and intervention note.",
+    "edit_numeric": "Change a valid local assignment seed; preserve all text fields and other chats.",
+    "switch_chat": "Switch to the other saved chat after committing current working state; restore its independently tracked draft and source.",
+    "source_replay": "Open historical dataset version one for read-only replay even though version two is in compact inventory; current connected source and draft stay unchanged.",
+    "result_replay": "Replay the exact historical experiment, without rerunning it or changing current draft/source.",
+    "saved_stage": "Open an exact saved plan as read-only context and return to the editable draft; no draft-field substitution.",
+    "copy_fields": "Open a saved working copy. In its owner chat, edit local unsaved fields and re-render; in the other chat, inspect it without a backend draft update.",
+    "restore_exact": "Export working state, locally restore it, and verify cloned exact source/result/replay selections. This operation does not create scientific objects.",
+    "stale_guide": "Hold an isolated guide reply, switch chats, and resolve it with a proposed draft and navigation. The old reply must not paint or mutate the new active chat.",
+    "overlap_save": "Hold a working-state CAS save, make a later edit, and request a chat switch. Publish the first fixture save, then require the newer edit to be saved in the originating chat before switching.",
+    "connect_source": "Explicitly connect an alternative exact retained dataset through the real journey handler and an isolated API packet. A proactive fixture draft must not replace an existing current draft or its pinned motivating brief. No investigator job is supplied by the fixture packet."
+  },
+  "independent_oracle": "A dictionary per chat containing expected question, control note, treatment note, numeric seed, connected dataset pin, current-plan pin, and motivating-brief pin. The oracle updates only for the declared user action, never by reading implementation state back into expected values.",
+  "invariants": [
+    "Each chat retains its own draft fields, source pin and current-plan selection across unrelated operations.",
+    "Read-only historical source/result/stage navigation preserves the exact requested version and never overwrites the current draft or source.",
+    "No subject study, environment construction, scientific object write, or unintended research job is submitted.",
+    "Stale replies and mutation completions cannot change another chat's fields or navigation.",
+    "Working-state saves belong to their captured chat and use that fixture chat's expected revision.",
+    "No latest-version substitution is accepted for explicitly historical replay.",
+    "Local copy editing preserves the original saved copy and experimental outcome authority.",
+    "Source reconnection may change the connected observation but preserves the existing draft's motivating source and saved plan until a declared draft edit."
+  ],
+  "long_range_goal": "Keep two distinct chat drafts and a selected current plan; replay old source/result, inspect saved-stage/copy context, visit the other chat, return, reconnect a source and receive a proactive brief, then verify the original current draft and motivating source remain intact.",
+  "coverage": "Record every action and the observed/expected active-chat state, action counts, historical exact reads, save revisions, and zero-job assertions. All twelve actions occur five times per seed by construction.",
+  "failure_policy": "Stop the affected sequence at the first failed invariant and retain its exact action prefix/minimal assertion before any production fix. Continue other independent seeds. No post-failure action reselection.",
+  "limits": "This is bounded Node-VM controller coverage with isolated deterministic discussion/API fixtures. It does not test browser layout, production persistence, provider behavior, network authorization, all possible interleavings, or global UI correctness. The mocked live-labelled experiment is explicitly a UI fixture, not a real model result."
+}

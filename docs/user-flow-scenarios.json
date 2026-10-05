@@ -1,0 +1,29 @@
+{
+  "schema_version": "societylab.user-flow-scenarios.v1",
+  "registration_label": "Prospective software test expectations recorded before executing these sequences",
+  "source_kind": "authored_test_fixture",
+  "scope": "Temporary local SQLite and loopback API state transitions. This does not test real model behavior, establish scientific effects, or attest upstream data.",
+  "model_providers": "none",
+  "generated_sequences": {
+    "seeds": [7, 42, 2026],
+    "operations_per_seed": 60,
+    "selection": "Python random.Random(seed), uniform choice from the declared operation list after a fixed preparation spine",
+    "operations": ["create_chat", "save_state", "append_message", "reuse_artifact", "copy_artifact", "edit_copy", "fork_chat", "stale_cas", "retry_request", "read_prior_context", "origin_science", "invalid_source"]
+  },
+  "predeclared_invariants": {
+    "exact_source_identity": "Every reused reference retains its original ID, version and hash. Later object versions never replace earlier links.",
+    "immutable_source": "Original authored source objects and prior snapshots remain byte-equivalent under their exact hashes.",
+    "copy_is_editable_not_empirical": "A copy is a separate owned workspace_draft with exact original provenance, no copied outcomes or verification, and editable content preserved when copying an existing editable draft.",
+    "owned_edit": "Only the owning chat can update a draft at its exact latest version. An old draft remains readable unchanged.",
+    "independent_fork": "A fork retains its exact origin revision/hash and initial working state/history; later edits and messages change only that branch.",
+    "cas_and_retry": "Stale CAS and invalid references have no effects. Retrying an identical accepted request adds no projects, chats, versions, messages or links; changed-body reuse is rejected.",
+    "prior_context": "Exact prior discussion revisions retain their original snapshot hash and exclude later messages, state and artifact links.",
+    "fixed_science_origin": "New object versions saved through a captured chat facade attach to that original chat regardless of later active-chat selection; source payloads are unchanged.",
+    "no_model_calls": "Every scenario leaves the shared provider call ledger at zero. Authored fixture outcomes are never promoted as model findings."
+  },
+  "negative_transitions": ["boolean/float expected revision", "stale revision", "wrong source hash", "foreign-owned draft update", "repeated request ID with different body", "invented project/chat", "guide header/body chat mismatch"],
+  "recovery": "After each rejected transition, reload the authoritative exact snapshot and continue with a new explicit request ID; never silently retry a costly scientific operation.",
+  "public_api_scenarios": ["create two chats; queue an authored import under chat A; switch working state to B; completed object and job retain origin A", "exact prior context GET remains unchanged after newer state/message", "mismatched guide origin fails before any guide/provider invocation"],
+  "result_artifact": ".runtime/workspace-scenario-results.json",
+  "failure_policy": "Record expected versus observed and retain any failure reproduction. A failed invariant is a defect, not an excluded favorable test; coordinate a narrow correction before claiming the sequence passed."
+}

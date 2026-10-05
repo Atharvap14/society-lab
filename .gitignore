@@ -1,0 +1,16 @@
+
+.secrets/
+.download-benchmark/
+ai-village/
+
+.runtime/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.venv/
+
+# Local reference checkout and original corpus samples are not product code.
+/research-sources/
+/examples/village-window.json
+/output/
+/tmp/

@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "title": "Amended analogue: assigned evidence-check text and correct manifest publication",
+  "template": "shared_artifact_coordination",
+  "parameters": {
+    "max_rounds": 4,
+    "valid_probability": 0.5,
+    "defect_modes": ["missing_entry", "wrong_quantity"],
+    "completion_claim": "The previous shift says the manifest is complete and ready to publish."
+  },
+  "required_capabilities": ["resettable_state", "role_scoped_observations", "private_context_insertion", "independent_code_oracle"],
+  "missing_capabilities": [],
+  "source_refs": [
+    {"kind": "behavior", "id": "behavior-4d47c2a27a29", "version": 3, "hash": "5bcb325f8259dcee8c79feef46d21932f5163d9748b1c4d0f4daeedca937196b"},
+    {"kind": "dataset", "id": "dataset-5d2eef17db31", "version": 1, "hash": "4351ceeb788cc000b6e288927299f20d68095e9a449a47bb6cef5e0791cc5c41"},
+    {"kind": "discovery", "id": "discovery-3d29f6c7f419", "version": 3, "hash": "32a06644e6fc1d83c42141b5640a092ac8d9d09bb82df171d779318fd535d403"}
+  ],
+  "observed_facts": [
+    {
+      "statement": "Claude 3.7 Sonnet states an intention to wait for GPT-4.1's updates and o3's graph publication before choosing a next action. A later message asks o3 whether publication succeeded and describes the graph's value to GPT-4.1's draft. These are plans and questions, not observed inactivity or an independently checked draft edit.",
+      "source_ids": ["dataset-5d2eef17db31"],
+      "evidence_ids": ["6dc370f6-66e4-4761-b639-ec98fed1b511", "70099418-7678-4ee9-9f1d-10f3ae575527"]
+    },
+    {
+      "statement": "GPT-4.1 describes a pending chart-dependent update, public-link monitoring and another workflow proceeding in parallel. A later message claims the draft contains the graph and current statistics and is unlocked. These reports do not independently establish artifact availability, correctness, task completion or a causal handoff chain.",
+      "source_ids": ["dataset-5d2eef17db31"],
+      "evidence_ids": ["9a863ed2-0340-4aa0-9c3c-4bf54eed6b3e", "492ea55a-a5b9-49a1-ae00-26242b55561b"]
+    },
+    {
+      "statement": "Claude 3.5 Sonnet reports avoiding another computer session while three peers use computers, following a sharing-settings difficulty. The report does not establish global exclusivity or actual lease state. It motivates a boundary on historical transport; the amended manifest world does not model computer occupation.",
+      "source_ids": ["dataset-5d2eef17db31"],
+      "evidence_ids": ["33d0ee32-3f3b-481f-bdac-68918e18e030"]
+    }
+  ],
+  "analogue_inventions": [
+    {
+      "name": "synthetic_manifest_and_unverified_handoff",
+      "description": "A manifest exists at reset, with required quantities known to all three roles and contents visible only through a current-version inspection. Its initial validity is invented at probability 0.5; missing-entry and wrong-quantity defects are invented. The previous-shift completion assertion is unverified public text held identical across assigned arms and discloses no study purpose.",
+      "reason_for_invention": "Creates a small publication-checking analogue with an independent correctness oracle. These task details and their distribution are not estimates from the historical reports."
+    },
+    {
+      "name": "fixed_evidence_check_contrast",
+      "description": "The existing registered runner supplies its fixed 36-word evidence-check note or matched 36-word neutral continuation note privately to the coordinator before its first scheduled decision. The assigned text persists within that run; ordinary context is an additional baseline. The active text requests inspection, comparison and repair or evidence. It is not an artifact-unavailability reminder or a hidden-thought edit.",
+      "reason_for_invention": "Defines a concrete whole-swarm assignment whose primary outcome is executed correct manifest publication. Any future model study may show improvement, null or harm."
+    },
+    {
+      "name": "bounded_roles_and_actions",
+      "description": "Coordinator, builder and verifier receive role-scoped observations in four shuffled rounds. Only the builder repairs and only the coordinator publishes. Inspect, repair, publish, message and wait are legal within the existing role rules. Wait consumes a decision and may repeat. The run ends at first publication or its 12-turn budget. There is no independent task, artifact-release gate or resume action.",
+      "reason_for_invention": "Makes the allowable coordination opportunities and stopping rule executable rather than borrowing unrepresented historical timing, availability or resource semantics."
+    },
+    {
+      "name": "publication_oracle_and_process_counts",
+      "description": "Independent code scores exact published contents against required entries and quantities. Current-version inspection by any role can satisfy the inspected-publication process flag; this does not require verifier confirmation or demonstrate a correct mental comparison. Inspection and messaging counts are executed process measures. Retained repair attempts and their success or failure may be inspected descriptively; no repair count is asserted as an existing registered secondary metric or identified mediator.",
+      "reason_for_invention": "Separates task correctness from agent narrative and observed actions from latent mechanisms."
+    }
+  ],
+  "mechanism_hypothesis": "Assigned private evidence-check text may change correct manifest publication under an unverified handoff assertion in this invented bounded world. The registered contrast identifies the total assigned-text effect for the tested swarm population and generator, including spillovers, if a future randomized model study follows the protocol. Inspection and repair trajectories can supply descriptive process evidence but do not identify mediation, beliefs or reduced latent stale-state use. Scripted execution validates infrastructure rather than estimating a model effect; the existing scripted policy can respond to note text.",
+  "fit_rationale": "This amendment follows the separately supplied review of the failed original proposal. It narrows the analogue to publication correctness and a defined evidence-check contrast; it does not preserve the historical task-switching or waiting mechanism. Chat plans, questions and completion reports motivate the broad question only. The implemented world supplies reset, scoped observations, private text insertion and an independent publication oracle. Required source identities are checked separately from semantic fit. The original failed attempt and exhausted hosted-review phase must remain unchanged; any approval of this new hash is a separate supplied review.",
+  "unmodeled_features": [
+    "Independent parallel tasks and gated dependent-task availability",
+    "Once-only resumption, elapsed inactivity or exogenous artifact release",
+    "Exclusive computer occupation, leases or real document-editing tools",
+    "Verified historical artifact availability, edit correctness or task completion",
+    "Recipient reading, exposure outside executable world observations or hidden channels",
+    "Persistent cross-run memory, latent thoughts, beliefs or psychological mechanisms",
+    "Network topology, individual direct effects and causal mediation",
+    "Historical transport, literature novelty and expected winning treatment",
+    "Prospective public preregistration or independent institutional/model adjudication"
+  ],
+  "unsupported_reason": "",
+  "historical_fidelity": "unestablished"
+}

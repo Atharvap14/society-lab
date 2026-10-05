@@ -1,0 +1,45 @@
+{
+  "source": "C:\\Users\\athar\\OneDrive\\Documents\\ChatGPT\\Simulation Experimentation\\ai-village",
+  "scope": {
+    "start": "2025-04-07T16:00:00.000000Z",
+    "end_exclusive": "2025-04-07T21:00:00.000000Z",
+    "limit": 1200,
+    "room": null
+  },
+  "fingerprint": "8ebb865e5f9a246a2130c94b9f3b17c936b05362fccaa2e928e14d5d2f9c8a58",
+  "diagnostics": {
+    "chat": {
+      "rows_scanned": 183485,
+      "matched_rows": 273,
+      "malformed_rows": 0,
+      "invalid_rows": 0,
+      "duplicate_ids": 0,
+      "warnings": [],
+      "retained_rows": 273,
+      "truncated": false,
+      "selection": "earliest chronological records within half-open UTC window"
+    },
+    "events": null
+  },
+  "messages": 273,
+  "agents_active": 4,
+  "graph_summary": {
+    "nodes": 293,
+    "edges": 840,
+    "edge_counts": {
+      "authored": 273,
+      "posted_in": 273,
+      "temporal_proximity": 249,
+      "mentions": 38,
+      "references_url": 5,
+      "lexical_recurrence": 2
+    },
+    "inferred_edges": 251
+  },
+  "candidate_count": 8,
+  "candidate_kinds": [
+    "commitment_with_later_blocker"
+  ],
+  "controls": 8,
+  "elapsed_seconds": 4.54
+}

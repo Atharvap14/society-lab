@@ -1,0 +1,25 @@
+{
+  "schema_version": "societylab.events.v1",
+  "source": {"id": "authored-software-fixture", "name": "Authored telemetry fixture for software testing", "kind": "authored_example", "harness": "scripted_fixture"},
+  "run": {"id": "fixture-run-001", "name": "Authored task and message trace; not AI Village data"},
+  "events": [
+    {"id":"e01","occurred_at":"2026-10-05T10:00:00Z","kind":"agent.registered","actor_id":"coordinator","data":{"name":"Coordinator","roles":["coordination"]}},
+    {"id":"e02","occurred_at":"2026-10-05T10:00:01Z","kind":"agent.registered","actor_id":"researcher","data":{"name":"Researcher","roles":["drafting"]}},
+    {"id":"e03","occurred_at":"2026-10-05T10:00:02Z","kind":"agent.registered","actor_id":"reviewer","data":{"name":"Reviewer","roles":["checking"]}},
+    {"id":"e04","occurred_at":"2026-10-05T10:00:03Z","kind":"task.created","actor_id":"coordinator","task_id":"publish-note","data":{"title":"Publish the reviewed note"}},
+    {"id":"e05","occurred_at":"2026-10-05T10:00:04Z","kind":"task.created","actor_id":"coordinator","task_id":"check-source","parent_task_id":"publish-note","data":{"title":"Check the original source"}},
+    {"id":"e06","occurred_at":"2026-10-05T10:00:05Z","kind":"task.assigned","actor_id":"coordinator","task_id":"publish-note","data":{"assignee_ids":["researcher"]}},
+    {"id":"e07","occurred_at":"2026-10-05T10:00:06Z","kind":"task.assigned","actor_id":"coordinator","task_id":"check-source","data":{"assignee_ids":["reviewer"]}},
+    {"id":"e08","occurred_at":"2026-10-05T10:00:07Z","kind":"message.sent","actor_id":"researcher","task_id":"publish-note","recipient_ids":["reviewer"],"data":{"content":"I am blocked waiting for the source check before publishing this note.","channel_id":"team-room"}},
+    {"id":"e09","occurred_at":"2026-10-05T10:00:08Z","kind":"tool.called","actor_id":"reviewer","task_id":"check-source","data":{"call_id":"call-1","tool_name":"read_source","arguments":{"document_id":"source-1"}}},
+    {"id":"e10","occurred_at":"2026-10-05T10:00:09Z","kind":"tool.returned","actor_id":"reviewer","task_id":"check-source","data":{"call_id":"call-1","success":false,"output":{"summary":"Temporary read failure in authored fixture"}}},
+    {"id":"e11","occurred_at":"2026-10-05T10:00:10Z","kind":"intervention.delivered","actor_id":"coordinator","task_id":"check-source","recipient_ids":["reviewer"],"data":{"intervention_id":"note-1","content":"Check the original source before approving the note.","policy_id":"authored-reminder"}},
+    {"id":"e12","occurred_at":"2026-10-05T10:00:11Z","kind":"tool.called","actor_id":"reviewer","task_id":"check-source","data":{"call_id":"call-2","tool_name":"read_source","arguments":{"document_id":"source-1"}}},
+    {"id":"e13","occurred_at":"2026-10-05T10:00:12Z","kind":"tool.returned","actor_id":"reviewer","task_id":"check-source","data":{"call_id":"call-2","success":true,"output":{"summary":"Source read reported by authored fixture"}}},
+    {"id":"e14","occurred_at":"2026-10-05T10:00:13Z","kind":"message.sent","actor_id":"reviewer","task_id":"check-source","recipient_ids":["researcher"],"data":{"content":"I checked the source; the draft still needs a correction.","channel_id":"team-room","reply_to_message_id":"e08"}},
+    {"id":"e15","occurred_at":"2026-10-05T10:00:14Z","kind":"artifact.updated","actor_id":"reviewer","task_id":"check-source","data":{"artifact_id":"review-notes","revision_id":"revision-1","change_summary":"Recorded the required correction in this authored fixture"}},
+    {"id":"e16","occurred_at":"2026-10-05T10:00:15Z","kind":"task.completed","actor_id":"reviewer","task_id":"check-source","data":{"success":true,"summary":"Source check reported complete"}},
+    {"id":"e17","occurred_at":"2026-10-05T10:00:16Z","kind":"message.sent","actor_id":"researcher","task_id":"publish-note","recipient_ids":["coordinator"],"data":{"content":"While waiting for the correction, I will prepare the remaining draft.","channel_id":"team-room"}},
+    {"id":"e18","occurred_at":"2026-10-05T10:00:17Z","kind":"task.completed","actor_id":"researcher","task_id":"publish-note","data":{"success":false,"summary":"Publication remained incomplete at the end of the authored capture"}}
+  ]
+}

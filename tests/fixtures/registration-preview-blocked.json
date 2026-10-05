@@ -1,0 +1,50 @@
+{
+  "packet": {
+    "preview_version": "registration-compatibility-preview-v1",
+    "blueprint_ref": {
+      "id": "environment_blueprint-7470a80732bc",
+      "version": 1,
+      "hash": "efb2632b98259e30f5e0243e7035cc77081fc31848fbecb6d0eeddd8d9dd59bd"
+    },
+    "registration_plan": {
+      "trials_per_cell": 2,
+      "seed": 4491,
+      "live": false
+    },
+    "status": "blocked",
+    "checks": {
+      "construction_compiled": true,
+      "fit_approved_analogue": true,
+      "current_source_authorization": true,
+      "design_compatible": false,
+      "exact_world_preserved": null
+    },
+    "reason": {
+      "stage": "design",
+      "code": "custom_topology_not_registered",
+      "message": "The world supports custom edges, but registered network designs do not; no graph substitution is permitted"
+    },
+    "design": null,
+    "registered": false,
+    "model_calls": 0,
+    "database_writes": 0,
+    "raw_source_reread": false,
+    "limits": [
+      "Unregistered point-in-time preview; actual registration repeats every gate for its selected exact blueprint and subject mode.",
+      "current_source_authorization means local registry/record membership and current implementation checks only; not user authorization, cloud permissions, remaining budget or upstream freshness.",
+      "fit_approved_analogue is a bound supplied/model review disposition; semantic citation truth, historical fidelity and causal mechanism identification remain unestablished.",
+      "Preparation runs finite factory/boundary probes and constructs prospective protocol declarations; it calls no subjects, archives no runs and reserves no budget.",
+      "Fixed registered contrasts do not automatically operationalize the blueprint mechanism or the local study-guide question."
+    ]
+  },
+  "expected_ref": {
+    "id": "environment_blueprint-7470a80732bc",
+    "version": 1,
+    "hash": "efb2632b98259e30f5e0243e7035cc77081fc31848fbecb6d0eeddd8d9dd59bd"
+  },
+  "expected_plan": {
+    "trials_per_cell": 2,
+    "seed": 4491,
+    "live": false
+  }
+}

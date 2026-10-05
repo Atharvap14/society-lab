@@ -1,0 +1,7 @@
+# Exact experiment plots
+
+Run `C:/Python312/python.exe scripts/build-experiment-plots.py --object-id experiment-b62705a33765 --object-id experiment-e022fb752a02` against the local read-only object API. The script verifies each returned payload fingerprint before extracting measurements. Matplotlib renders a separate figure per exact saved study; it does not pool the studies.
+
+The left panel displays the saved correct-publication difference and native 95% interval for reminder versus neutral note and reminder versus baseline. The middle panel colors recorded actions by zero-based decision index, with a cross for an explicit failed tool result. This is ordinal sequence, not wall-clock duration. The right panel displays saved team-level publication and any-agent inspection-of-published-version fields. Missing, malformed and nonfinite measures remain masked unknown cells rather than zero. Inspection is not proof of a mental mechanism.
+
+Each `.runtime/plots/<record hash>/source.json` contains the exact source reference, plotted measurements, image SHA256 and generator SHA256. Only measurements and action names are exported; prompts, message contents, private context and provider envelopes are excluded. These graphics describe the recorded test world and agent runs, not historical AI Village causality. The current small-study intervals include zero. Matplotlib 3.10.0 was used; no seaborn dependency is required.

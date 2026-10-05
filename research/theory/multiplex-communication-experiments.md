@@ -1,0 +1,59 @@
+# Multiplex communication: hypotheses and experiments
+
+This is a practical framework for proposed studies, grounded in the implemented instruments. It introduces no behavioral finding. A swarm can communicate through chat, tools, shared objects and task dependencies; collapsing those channels into one influence graph discards the distinctions needed for causal tests. Discovery should produce falsifiable alternatives and measurement requirements before selecting an executable analogue.
+
+## Six measurements that should stay separate
+
+**Emission** is a recorded posting action. The source-link instrument can join `AGENT_TALK.data.messageId` to a chat ID and check actor, room and content. Optional `chatMessageId` must agree. This verifies exported lineage within supplied rows, not delivery. **Reference** is an author mentioning another agent, source or object. A name-reference edge does not establish intended recipient, exposure or dependence.
+
+**Exposure** requires an operational observation boundary. Synthetic environments record permitted deliveries and recipient-scoped attachment inventories. Inventory at submission is not mental knowledge: free text can convey values without canonical attachments. Historical session FKs, matching text and timestamp proximity do not supply a read acknowledgment. **Attempted tool action** is a logged request or executed-action record with separately recorded output/error presence. A null error does not prove success.
+
+**Artifact transition** requires an identified object and a checked state change. The manifest environment has code-defined inspection, repair and publication; a chat completion claim cannot make the manifest valid. **Task outcome** is independently scored: exact modular total, binary truth verdict, valid publication or executed task completion. Agreement and convincing explanations are different outcomes. These boundaries follow [source links](../../swarm_lab/source_links.py), [shared artifacts](../../swarm_lab/environments.py), [complementary information](../../swarm_lab/complementary_environment.py) and [resource tasks](../../swarm_lab/resource_environment.py).
+
+Represent each channel as a separate layer with typed identities and provenance. A turn→session FK attributes logged activity; it is not an agent→agent communication edge. Preserve missing fields, duplicate endpoint ambiguity, filter scope and conflicting evidence. Unknown exposure must not become zero exposure. The [bounded scanner](../../swarm_lab/source_scanner.py) and [triangulation plan](source-triangulation-plan.md) provide this source boundary without merging it into the mention graph.
+
+## Roles are competing causal hypotheses
+
+The following interventions are proposals unless explicitly identified as supported. A role label describes a testable task/channel function, not a stable psychological identity.
+
+| Hypothesis | Discriminating perturbation and falsifier | Current foothold and gap |
+|---|---|---|
+| Relay | Randomize an alternate route while preserving original information. If delivery and accuracy persist after bypassing the nominated relay, indispensable-relay claims weaken. | Canonical forwarding lineage is implemented. Selective link failure, delays and route-matched recipient quotas need new validated adapters. |
+| Bottleneck | Cross channel capacity or scheduling opportunity with route availability. Recovery under added capacity supports an opportunity constraint more than a personality account. | Action/message caps and named topologies exist. Equal total budgets do not equalize degree, path length or multicast deliveries. |
+| Dependency | Withhold a genuinely necessary component across every permitted channel; separately leave independent work legal. Continuing independent work falsifies a universal global-wait hypothesis. | Complementary residues require multiple originals; resource tasks separate independent and gated work. Selective component-withholding is a new world, not a retrospective exclusion. |
+| Echo/amplification | Change repetition while holding original measurements fixed, distinguishing duplicated reports from additional independent sensors. No accuracy change or corrected source counting can falsify a specified amplification prediction. | Diffusion has explicitly correlated copied reports and a provenance reminder. Variable copy multiplicity and adversarial source IDs need extensions. |
+| Convergence | Compare communication opportunities under the same measurement distribution, then score correctness separately from agreement. Agreement without messages favors common information, instructions or priors over transmission. | Ring/complete comparisons and truth oracles exist. Disconnected graphs have environment checks, but their confirmatory inclusion requires a new registered runner design. |
+
+The [diffusion study](network-experiments.md) distinguishes original sensors from copied reports. Its source-ID semantics are generator assumptions; distinct real-world IDs do not establish independent evidence. Complementary information instead makes each independently uniform residue necessary for the exact modular sum: any strict subset leaves the target uniform. That guarantee concerns information actually withheld, not merely missing canonical attachments when free-text communication remains available.
+
+The [resource analogue](resource-study-design.md) tests executed work under an invented exclusive lease. Historical agents sometimes reported parallel work or concurrent computer sessions; the [falsifier audit](communication-falsifiers.md) prevents turning sparse chats into a universal shared-computer claim. A useful dependency experiment must state which task is blocked, which action remains legal and whether the purported constraint is observed or invented.
+
+## Assignment, scheduling and common causes
+
+Randomize whole networks when interference is expected. Agents, turns, deliveries and tasks are measurements within a unit, not independent replications. A topology treatment changes degree, route options and information opportunity. Its effect is the assigned topology bundle unless additional design controls isolate a narrower component. In star configurations, treating a fixed hub also changes recipient position; that interaction cannot automatically be called leadership.
+
+Common goals, shared system instructions, model families, private evidence and scheduler order can explain coordinated action without message influence. Specify those generators before execution. The existing factorial studies use independent environment draws and balanced randomized execution order. The [timed resource runner](../../swarm_lab/timed_resource_experiments.py) instead uses independent seed blocks, each with two reset swarms sharing an identical precomputed exogenous schedule and release path. Identical seeds alone would not ensure identical schedules if actions consumed randomness differently. These are distinct registered designs; pairing cannot be invented after observing outcomes.
+
+Realized leases, dispatches and stopping times can still differ under matched initial schedules. Model aliases and generation settings are pinned and response metadata recorded, but immutable provider weights and absence of external memory remain assumptions. Word-matched neutral notes control one context dimension; they need not be semantically inert or token-matched.
+
+## Why centrality is not an automatic mediator
+
+Messages, achieved attachment coverage, waiting and graph centrality emerge after treatment. Conditioning on them can select different kinds of networks, remove a treatment pathway or couple treatment to unmeasured determinants of success. A regression coefficient for realized centrality therefore does not identify a mediated effect. Attachment coverage also measures inventory rather than comprehension; a missing attachment does not imply unavailable information in free text.
+
+Report these quantities as process descriptions alongside policy intention-to-treat outcomes. For mediation, first define a manipulable channel property and its intervention, consider interference and treatment-induced confounding, and register the extra assumptions and design. Randomized bandwidth or delivery permissions may test a mechanism more directly than relabeling a high-centrality actor. Neither source triangulation nor a positive topology effect establishes historical causal influence.
+
+## Timing and fidelity contracts
+
+Private insertion is added observable context, never latent-state editing. The [timing controller](../../swarm_lab/intervention_timing.py) evaluates arm-blind scoped requests before decisions, abstains on unknown evidence, permits one eligible preparation and binds a local receipt to the exact next request. Its resource triggers include executed waiting while independent work remains pending and first observed availability. Completed never-delivered units remain in policy ITT; infrastructure-incomplete execution suppresses estimation. Receipt proves request construction, not provider consumption. Triggering on a treatment-shaped proposed action would change the policy and selection problem.
+
+[Capability-driven authoring](../../swarm_lab/environment_authoring.py) currently selects shared-artifact, diffusion, complementary-information or resource templates, or returns unsupported. Fidelity is a vector: channel permissions, observable state, executable transitions, information distribution, incentives, agent continuity and action costs. Browser operation, arbitrary populations/roles, persistent cross-run memory, strategic incentives, fallible provenance and general historical replay remain gaps. Schema validity and reset checks cannot establish mechanism fit or historical fidelity. A missing capability should become a construction requirement, not an invisible simplification.
+
+## Next work and registration
+
+Zero-model work can reconcile explicit source keys, audit coverage, challenge joins with conflicts, replay saved executions and verify information/scheduling feasibility with scripts. Scripts can demonstrate possible relay paths or counterexamples; they do not reveal LLM behavior. Source-compatible hypotheses should retain supporting and conflicting records, alternative common causes and unresolved exposure.
+
+New model studies require an authorized budget and frozen task, channel and treatment declarations. Register the outcome oracle, complete assignment grid, randomization unit, initial-state/schedule policy, exact note wording, recipient, trigger, action caps, stopping rule, missing-response scores, primary contrast family and inference method. Archive code and pre-subject state; exclude historical future from subject inputs. Failed infrastructure remains retained evidence, never success-selected replacement. Use fresh independent assignments for replication and separately register cross-model/task transport.
+
+Check attainable p-value resolution and floor/ceiling behavior before execution. Two paired seed blocks cannot attain an exact two-sided p below 0.5. A null estimate or collapsed bootstrap is not equivalence. The [finite timed claim checker](../../swarm_lab/timed_resource_claims.py) distinguishes policy ITT from post-treatment receipt descriptions and requires separately bound replay authorization; accurate numbers still do not approve a broader social story.
+
+Source pins at writing: `source_links.py` SHA256 `3ec3dd73677cc94af7b0f4fae22a165397ee39dcbc57f46311cf0eb7415e1723`; `intervention_timing.py` `c37fd0abac77926f724b93d410ca438988a15258808f9aa51bdc2ac5014fa8ad`; `timed_resource_experiments.py` `937e49520772740faeae80525165554e85cdf1babfb0a700faa989ebe6447b06`. These identify local instrument versions, not authenticated source completeness or empirical discoveries.

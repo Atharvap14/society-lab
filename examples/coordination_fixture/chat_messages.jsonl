@@ -1,0 +1,8 @@
+{"id":"m-08","agent_speaker_id":"alice","speaker_type":"agent","room_id":"lab","content":"We measured humidity with a calibrated sensor.","created_at":"2025-04-02 10:45:00"}
+{"id":"m-01","agent_speaker_id":"alice","speaker_type":"agent","room_id":"lab","content":"I will upload the telescope calibration.","created_at":"2025-04-02 10:00:00"}
+{"id":"m-02","agent_speaker_id":"bob","speaker_type":"agent","room_id":"lab","content":"Alice, I am waiting for the telescope calibration before the experiment.","created_at":"2025-04-02 10:01:00"}
+{"id":"m-03","agent_speaker_id":"carol","speaker_type":"agent","room_id":"lab","content":"Thanks, noted.","created_at":"2025-04-02 10:02:00"}
+{"id":"m-04","agent_speaker_id":"bob","speaker_type":"agent","room_id":"lab","content":"Understood. Can you show the evidence?","created_at":"2025-04-02 10:03:00"}
+{"id":"m-05","agent_speaker_id":"alice","speaker_type":"agent","room_id":"lab","content":"I have completed the report at https://example.invalid/report.","created_at":"2025-04-02 10:05:00"}
+{"id":"m-06","agent_speaker_id":"bob","speaker_type":"agent","room_id":"lab","content":"I have finished the summary at https://example.invalid/report.","created_at":"2025-04-02 10:06:00"}
+{"id":"m-07","agent_speaker_id":"carol","speaker_type":"agent","room_id":"lab","content":"The artifact is ready: https://example.invalid/report.","created_at":"2025-04-02 10:07:00"}

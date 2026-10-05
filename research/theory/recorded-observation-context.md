@@ -1,0 +1,23 @@
+# Recorded observations for prospective research
+
+The investigator and skeptic receive the same bounded recorded-observation packet after the host matches the candidate to its original selected comparison and exact dataset, discovery, selected-audit and temporal-audit versions. This packet is context for hypothesis development, not a new observational study or a status promotion. Existing candidates and old research attempts are not reinterpreted automatically.
+
+The host checks local registry body hashes, the fixed current producer-file bytes, original source/window bindings and a stored replay proof for each observation. These are separate gates. Reading a saved passing proof does not freshly attest the data: `fresh_source_attestation`, `raw_or_index_reread` and `operator_rerun` remain false. The context reader makes zero model calls and writes no registry records. Explicit audit/replay commands and the report's fresh derivation are separate operations.
+
+Three summaries retain only the two original windows of the registered comparison:
+
+| Observation | Retained quantities | Interpretation boundary |
+| --- | --- | --- |
+| Actor/time platform records | WAIT, PAUSE, START and STOP counts, room missingness, selected-author source partition | Logged choices and boundaries do not reconstruct inactivity, exclusive leases, receipt or delivery. No room is assigned from a chat record. |
+| Literal wait-marker proximity | Original marker and deterministic nonmarker message denominators, candidate counts, censor-status counts at 30, 60 and 300 seconds | The eight fixed words are an unadjudicated literal instrument. Candidate flags keep their original union-of-query-window scope. Export coordinate proximity is not calibrated elapsed time. Controls are not semantic ground truth. |
+| Static edge algebra | All four extraction variants, natural squared energies, gradient/circulation fractions, supported and balanced edge counts | Forward-minus-reverse named-reference counts discard chronology. Energy is quadratic in counts; its fraction is not a message share. Faces are unspecified, so curl and harmonic components stay unknown. No hierarchy, rumor or continuum geometry is inferred. |
+
+The reader searches the latest eight object IDs per observation kind and latest 64 verification IDs. Exact historical versions are loaded only through their saved references. A matching latest malformed, failed or stale record is withheld; the reader does not choose an older favorable result. Failure to find a proof in that bounded search is scoped missingness, not global absence. A missing actor parent also withholds dependent marker summaries while leaving separately valid edge algebra available.
+
+Default ceilings are 4 MiB per accepted registry body, 16 MiB in total, JSON depth 64 and 24,000 retained UTF-8 output bytes. These limit accepted serialized data; they do not bound the Store decoder's allocation before acceptance. Budget failures withhold whole summaries rather than trimming numbers or denominators. Only fixed host producer filenames are opened, never a payload-supplied index, source or credential path.
+
+Local checks reconcile source-author/window counts, nonnegative count partitions, candidate/censor consistency and finite energy quantities. Fraction bounds use the declared dimensionless absolute-plus-relative tolerance of 1.1e-9 around [0,1]; original floating values are retained without clipping. These checks detect local contradictions, and do not replace scientific replay or validate producer semantics.
+
+Both research packets and the saved research attempt retain the exact observation and stored-proof references with their gates. Source message citations still require supplied or tool-retrieved evidence IDs. Observation IDs do not become eligible message citations. Library status, causal support and novelty do not change merely because an observation or proof is available. Hypotheses must still state ordinary alternatives, measurement sensitivity, falsifiers and transport limits.
+
+New behavior registrations retain an exact `research_attempt_ref` to the context-bearing proposal snapshot. The subsequent adjudicated attempt may receive a later version without replacing that pin. Resumed reviews retain the loaded snapshot; a legacy proposal lacking saved context receives a new context-bearing snapshot before review. Registration checks the immutable reference against source versions, candidate, proposal and measurement-audit references. This proves which saved packet accompanied the proposal; it does not establish semantic truth or fresh measurement validity. Earlier library records remain as recorded.

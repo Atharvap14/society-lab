@@ -1,0 +1,45 @@
+# Episode workspace peer check — 4 October 2026
+
+No actionable usability or semantic defect was found in this bounded review of the current episode journey. This checks the presentation and exact-source navigation contract; it is not fresh scientific authentication, empirical replication, environment-fit approval, or a review of every possible saved object. The reviewer authored the isolated renderer and reviewed the host integration separately.
+
+The production packet was fetched through the loopback GET endpoint with explicit selected/temporal versions, lead ID, and behavior version. A separate Node VM exercised the current `app.js` route against those exact production records and packet. It used no shared browser and allowed no job submission. No provider calls, registry writes, operator execution, raw/index rereads, or changes to modules/tests occurred. The full regression running in the parent task was left untouched.
+
+## Exact reviewed episode
+
+| Record | Version | SHA-256 |
+| --- | --- | --- |
+| `dataset-5d2eef17db31` | 1 | `4351ceeb788cc000b6e288927299f20d68095e9a449a47bb6cef5e0791cc5c41` |
+| `discovery-3d29f6c7f419` | 3 | `32a06644e6fc1d83c42141b5640a092ac8d9d09bb82df171d779318fd535d403` |
+| `selected_lead_audit-cdb8875d4e64` | 1 | `3309d1e6e8d174fe5b8919af3288812de65de1c3993b74ec6a9ff001578e11b0` |
+| `temporal_path_audit-1c08eba1b540` | 1 | `4ef7a67531cb9a2db9a8f7ba8ab1bbc403549cbe08e806c2b00a2cfb106e6512` |
+| `behavior-4d47c2a27a29` | 4 | `eaf6460cd251c6c640477d5f1c990da388333567f2de9c9e76560ae0afb59f21` |
+
+The lead is `graph-lead-b2c7d08d1c926822`, feature `bridge_dependence`. Its focal window is `window-4dd82e3ac3b0d6e4`, 22 April 2025, 18:00–19:00 UTC; the original comparator is `window-9e914aaef4dc1c17`, 19:00–20:00 UTC. Both chat scopes retain room `18a3b2fb-9d2e-4ce7-b9b1-52e09c5408a8`. These original chat rooms are not assigned to missing-room event records.
+
+## Seven checked claims
+
+1. **Navigation retains exact source parents and the original comparator.** The Observatory entry supplies a discovery pin; the Library entry additionally supplies its saved behavior pin. `openEpisodeWorkspace` loads the exact discovery version, checks its dataset reference, and requests an exact selected audit and temporal parent from a bounded inventory. A newest relevant wrong hash raises rather than falling back to another favorable source. The GET parser rejects duplicate query fields, unknown fields, partial behavior identity pairs, and noncanonical versions. The production journey kept discovery version 3 and the original April 22 comparison. Sources: [app.js:74](../web/app.js#L74), [episode_workspace.py:180](../swarm_lab/episode_workspace.py#L180), [episode_workspace.py:261](../swarm_lab/episode_workspace.py#L261).
+
+2. **Comparison direction and measurement policies remain distinguishable.** The packet projects the saved focal value, comparator value, and focal-minus-comparator difference, checking their consistency before presentation. Native and fixed-pair policies are labeled separately. The actual exact baseline is focal 1, comparator 0, difference +1; the Unicode baseline is focal 1, comparator 2/3, difference +1/3. Those are alternative name instruments on the same selected records, not newly observed society changes or independent replications. Strict temporal counts are separately copied from the saved parent, with no path or bridge calculation in the renderer. Sources: [episode_workspace.py:53](../swarm_lab/episode_workspace.py#L53), [episode_workspace.py:77](../swarm_lab/episode_workspace.py#L77), [episode-workspace.js:52](../web/episode-workspace.js#L52).
+
+3. **Availability requires recorded source gates; unknown does not become zero.** Every quantitative layer requires matching exact references, comparison, original window scopes, and all three base gates. Actor/wait/edge layers further require their own exact record and stored-proof bindings. The actual packet passed the local registry/body, current producer-byte, and exact-comparison gates. It still explicitly reported `fresh_source_attestation=false`, `operator_rerun=false`, `model_calls=0`, and `database_writes=0`. These gates do not freshly reauthenticate raw source/index bytes or numerical operators. Unavailable fields use “Unknown,” and unsupported cells are not shown as invented zeros. Sources: [episode-workspace.js:34](../web/episode-workspace.js#L34), [episode-workspace.js:38](../web/episode-workspace.js#L38), [episode-workspace.js:68](../web/episode-workspace.js#L68), [research_observations.py:353](../swarm_lab/research_observations.py#L353).
+
+4. **The displayed hypothesis is an explicitly requested exact record.** The host verifies that a requested behavior belongs to the same source versions and candidate; the renderer separately requires `expected.behavior_ref` to match. An unsolicited available behavior cannot replace the lead's alternatives. The production record is “Shared-artifact handoff wait-and-update cycle,” version 4, status `infrastructure_tested`. That status and the saved critique remain visible; no new causal support, novelty, or fit approval follows from opening the workspace. Sources: [episode_workspace.py:149](../swarm_lab/episode_workspace.py#L149), [episode-workspace.js:38](../web/episode-workspace.js#L38), [episode-workspace.js:117](../web/episode-workspace.js#L117).
+
+5. **Evidence is a bounded original-window excerpt.** The endpoint checks message identity, original room, and half-open time scope. It emits at most eight messages per group and at most 1,000 content characters per message, with exact source coordinates and the SHA-256 of the full retained dataset content. The actual focal group shows 8 of 10 original evidence IDs, with 2 unshown and no missing IDs; the comparator shows all 4 of 4. None of these 12 contents was truncated in the current packet. The interface calls them source excerpts and retains count limits in expandable metadata, so it does not imply all dataset content or full historical activity is visible. This check did not reread raw source lines. Sources: [episode_workspace.py:112](../swarm_lab/episode_workspace.py#L112), [episode-workspace.js:108](../web/episode-workspace.js#L108).
+
+6. **Actor, literal-word, and static algebra scopes remain separate.** The focal/comparator actor excerpts contain 35/23 records and 3/8 WAIT choices respectively; every one has a missing room. The literal-marker author-window groups contain 12/9 marker messages and 4/4 fixed nonmarker comparisons. The component retains original union-of-query-window candidate/censor flags, does not reinterpret those comparisons as semantic negatives, and warns about unknown chat clock policies and event reuse. Hodge output retains all four original variants for both windows, displays approximate-zero energies only by its disclosed tolerance, and leaves curl/harmonic unknown without faces. These distinct presentation layers make no room, inactivity, lease, receipt, influence, hierarchy, or causal inference. Sources: [episode-workspace.js:78](../web/episode-workspace.js#L78), [episode-workspace.js:84](../web/episode-workspace.js#L84), [episode-workspace.js:98](../web/episode-workspace.js#L98).
+
+7. **Question transfer is local drafting, not execution or implicit source approval.** The current route retained an edited question through the input handler. Clicking transfer copied only its text, cleared both a preexisting optional behavior and capability selection, and navigated to Environment authoring. The independent VM observed three exact object GETs and one episode-packet GET while opening; transfer caused zero additional requests and zero job submissions. Selecting a motivating observation in authoring is a later explicit action. The question stays a draft until construction is separately submitted; the copy operation does not register a protocol, approve fit, grant live budget, or execute subjects. Sources: [app.js:966](../web/app.js#L966), [app.js:1015](../web/app.js#L1015), [episode-workspace.js:113](../web/episode-workspace.js#L113), [episode-workspace.js:123](../web/episode-workspace.js#L123).
+
+## Reviewed implementation bytes
+
+| File | SHA-256 |
+| --- | --- |
+| `web/episode-workspace.js` | `4784d3b23d8b00d9b702612c3cd15adccc1856fb3b469430732f49a4053c1b4e` |
+| `web/app.js` | `532d96001a7dcf2ac2cbf6f856612885543b0368972d5a924b812e33c254c44e` |
+| `swarm_lab/episode_workspace.py` | `10ab5bf57c1e84004a8a384893c385bac8bba45583abf89559b979829e857850` |
+| `swarm_lab/server.py` | `b11c915d194b26c02b9ad8d6c27949ce27e67a5789b94354dfe2ed3e10910489` |
+| `swarm_lab/research_observations.py` | `ed1df6c2b29e7be0e50bf570edf9410af3b942a7dd1658369c4f513cccaca09f` |
+
+The eight existing isolated renderer tests had passed at the listed renderer bytes before this review. Their source was inspected here, together with the host route/API tests; the full regression was neither restarted nor represented as completed by this document. Shared-browser visual QA remains the parent task's separate evidence.
